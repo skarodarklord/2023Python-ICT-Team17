@@ -19,12 +19,12 @@ box_pwd = tk.Entry(login, width=40, font=("Arial", 12), justify="center", show="
 # Create buttons
 button_frame = tk.Frame(login)
 button_frame.pack(side=tk.BOTTOM, pady=10)
-btn_login = tk.Button(button_frame, text="Login", width=21, command=lambda: runme(login))
 btn_exit = tk.Button(button_frame, text="Exit", width=21, command=login.quit)
-btn_exit["font"] = btn_font
-btn_exit.pack(side=tk.LEFT, padx=10)
+btn_login = tk.Button(button_frame, text="Log in", width=21, command=lambda: runme(login))
 btn_login["font"] = btn_font
 btn_login.pack(side=tk.LEFT, padx=10)
+btn_exit["font"] = btn_font
+btn_exit.pack(side=tk.LEFT, padx=10)
 
 # Style labels, entry boxes and buttons
 lb_title.pack(side=tk.TOP, pady=15)

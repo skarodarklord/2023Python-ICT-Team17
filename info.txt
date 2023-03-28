@@ -12,14 +12,14 @@ nhánh:
 	+ DOB nhân viên
 	+ Address nhân viên
 	+ SĐT nhân viên
-	+ Cấp bậc nhân viên (Thực tập - Chính thức - Quản lý - Chủ)
-- Thông tin khách hàng
+	(+ Cấp bậc nhân viên (Thực tập - Chính thức - Quản lý - Chủ))
+(- Thông tin khách hàng
 	+ ID Khách hàng
 	+ Tên khách hàng
 	+ DOB khách hàng
 	+ Address khách hàng
 	+ SĐT khách hàng
-	+ Cấp bậc khách hàng (Thường - Đồng - Bạc - Vàng - Kim cương)
+	+ Cấp bậc khách hàng (Thường - Đồng - Bạc - Vàng - Kim cương))
 - Thông tin sách:
 	+ ID / ISBN sách
 	+ Title sách
@@ -28,8 +28,9 @@ nhánh:
 	+ Tác giả sách
 	+ Đối tượng đọc
 	+ D/M/Y sách nhập kho
+	++ Số lượng nhập
 	+ Giá tiền sách
-	+ Khuyến mãi sách (% giảm cho từng đối tượng)
+	(+ Khuyến mãi sách (% giảm cho từng đối tượng))
 
 Main tree (No GUI):
 
@@ -37,7 +38,7 @@ book_store
 |__ data_init
 |_____ store.py
 |_____ employee.py
-|_____ customer.py
+(|_____ customer.py)
 |_____ book.py
 |input.py
 |functions.py
