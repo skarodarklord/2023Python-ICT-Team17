@@ -3,7 +3,10 @@
 # DoB: str
 # Address: str
 # Phone number: str
-# Staff level
+# Salary
+# (Staff level)
+
+#Can: Modify books info, input books, see books & store info, see & modify customers list
 
 class Staff:
     def __init__(self, i, n, d, a, p):
@@ -27,6 +30,13 @@ class Staff:
     
     def get_phone_num(self):
         return self.__phone
+    
+    #For admins
+    def set_salary(self, s):
+        self.__salary = s
+        
+    def get_salary(self):
+        return self.__salary    
     
     #Only staff & admin available, don't need this
     #def set_level(self):

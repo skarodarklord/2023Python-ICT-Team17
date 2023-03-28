@@ -12,6 +12,7 @@ nhánh:
 	+ DOB nhân viên
 	+ Address nhân viên
 	+ SĐT nhân viên
+	++ Lương
 	(+ Cấp bậc nhân viên (Thực tập - Chính thức - Quản lý - Chủ))
 (- Thông tin khách hàng
 	+ ID Khách hàng
