@@ -5,7 +5,7 @@ from Book_store import store
 from Book_store import customers
 
 def add_admin(ad_list):
-    print(f"Input admin info: /n")
+    print(f"Input admin info: \n")
     id = str(input(f"Admin ID: "))
     name = str(input(f"Admin name: "))
     dob = str(input("DoB: "))
@@ -44,7 +44,6 @@ def set_staff_salary(staff_list):
         salary = int(input(f"\nSalary for staff {staff_list[i].get_name()} (VND/month): "))
         staff_list[i].set_salary(salary)
         
-        
 def show_staff(staff_list): #include salary
     print(f"All staffs information: \n")
     for i in range(len(staff_list)):
@@ -65,7 +64,6 @@ def show_books(book_list): #include price
               f"Target audience: {book_list[i].get_target()} \n"
               f"Price: {book_list[i].get_price()} \n\n")
     
-    
 def find_books_index(book_list): #by name
     name = str(input("Enter book name: "))
     for i in range(len(book_list)):
@@ -74,7 +72,6 @@ def find_books_index(book_list): #by name
     if i >= len(book_list):
         print("Book does not exist!")
         return None
-
 
 def find_staff_index(staff_list): #by name
     nm = str("Enter staff name you want to find: ")
@@ -85,8 +82,45 @@ def find_staff_index(staff_list): #by name
         print(f"Can't find staff!")
         return None
     
+def remove_staff(staff_list, i):
+    staff_list[i].remove()
     
-def modify_staff_info(i):
+def modify_staff_info(staff_list, i):
+    print(f"What do you want to update: \n"
+          f"1. Staff ID \n"
+          f"2. Staff name \n"
+          f"3. Staff DoB \n"
+          f"4. Staff address \n"
+          f"5. Staff phone number \n"
+          f"6. Staff salary \n")
+    op = int(input("Your choice: "))
+    match op: 
+        case 1:
+            print(f"Current staff ID: {staff_list[i].get_id()} \n")
+            new_id = str(input(f"New staff ID: "))
+            staff_list[i].set_id(new_id)
+        case 2: 
+            print(f"Current staff name: {staff_list[i].get_name()} \n")
+            new_name = str(input(f"New staff name: "))
+            staff_list[i].set_name(new_name)
+        case 3:
+            print(f"Current staff dob: {staff_list[i].get_dob()} \n")
+            new_dob = str(input(f"New staff dob: "))
+            staff_list[i].set_dob(new_dob)
+        case 4:
+            print(f"Current staff address: {staff_list[i].get_addr()} \n")
+            new_addr = str(input(f"New staff address: "))
+            staff_list[i].set_addr(new_addr)
+        case 5:
+            print(f"Current staff phone number: {staff_list[i].get_phone_num()} \n")
+            new_phone = str(input(f"New staff phone number: "))
+            staff_list[i].set_phone(new_phone)
+        case 6:
+            print(f"Current staff salary: {staff_list[i].get_salary()} \n")
+            new_salary = str(input(f"New staff salary: "))
+            staff_list[i].set_salary(new_salary)
+        case _:
+            print(f"Invalid choice!")
     
 
 #For staffs:
@@ -104,7 +138,6 @@ def input_books(books_list):
         new_book.set_price()
         books_list += [new_book]
     
-    
 def show_books(book_list): #include price
     for i in range(len(book_list)):
         print(f"\nBook ID: {book_list[i].get_id()} \n"
@@ -115,7 +148,7 @@ def show_books(book_list): #include price
               f"Target audience: {book_list[i].get_target()} \n"
               f"Price: {book_list[i].get_price()} \n\n")
         
-    def find_books_index(book_list): #by name
+def find_books_index(book_list): #by name
     name = str(input("Enter book name: "))
     for i in range(len(book_list)):
         if book_list[i].get_name() == name:
@@ -124,8 +157,7 @@ def show_books(book_list): #include price
         print("Book does not exist!")
         return None
     
-def modify_book_info(i)
-
+def modify_book_info(i):
 
 def show_store_info(store):
     print(f"Store ID: {store.get_id()} \n"
@@ -133,11 +165,13 @@ def show_store_info(store):
           f"Address: {store.get_address()} \n"
           f"Phone number: {store.get_phone()} \n")
 
-
 def add_customer(customers_list):
 
-
-def show_customer(customers_list):    
+def show_customer(customers_list): 
+    
+def find_customer_index(customer_list):
+    
+def modify_customer_info(i)   
 
 #Need function to validate input   
 
