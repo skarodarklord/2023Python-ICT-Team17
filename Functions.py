@@ -218,7 +218,7 @@ def add_customer(customers_list):
         addr = str(input(f"Enter customer address: "))
         phone = str(input(f"Enter customer phone number: "))
         new_customer = customers.Customer(id, name, dob, addr, phone)
-        customer_list += [new_customer]
+        customers_list += [new_customer]
 
 def show_customer(customers_list): 
     for i in range(len(customers_list)):
