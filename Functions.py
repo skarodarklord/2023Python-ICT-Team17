@@ -12,7 +12,7 @@ def add_admin(ad_list):
     phone = str(input(f"Phone number: "))
     ad_list += [admin.Admin(id, name, dob, phone)]
 
-#For admins:
+#For admin:
 def input_store_info():
     print(f"Input store infomation: \n")
     id = str(input(f"Store ID: "))
