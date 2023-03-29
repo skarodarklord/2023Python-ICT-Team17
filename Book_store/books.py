@@ -19,20 +19,38 @@ class Book:
         self.__target_audience = None
         self.__price = 0
         
+    def set_id(self, id):
+        self.__id = id
+        
     def get_id(self):
         return self.__id
+    
+    def set_title(self, title):
+        self.__title = title
     
     def get_title(self):
         return self.__title
     
+    def set_genre(self, genre):
+        self.__genre = genre
+    
     def get_genre(self):
         return self.__genre
+    
+    def set_author(self, author):
+        self.__author = author
     
     def get_author(self):
         return self.__author
     
+    def set_year(self, year):
+        self.__pub_year = year
+    
     def get_pub_year(self):
         return self.__pub_year
+    
+    def set_quantity(self, quantity):
+        self.__quantity = quantity
     
     def get_quantity(self):
         return self.__quantity
