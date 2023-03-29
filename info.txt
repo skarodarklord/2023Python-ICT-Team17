@@ -14,13 +14,13 @@ nhánh:
 	+ SĐT nhân viên
 	++ Lương
 	(+ Cấp bậc nhân viên (Thực tập - Chính thức - Quản lý - Chủ))
-(- Thông tin khách hàng
+- Thông tin khách hàng
 	+ ID Khách hàng
 	+ Tên khách hàng
 	+ DOB khách hàng
-	+ Address khách hàng
+	(+ Address khách hàng)
 	+ SĐT khách hàng
-	+ Cấp bậc khách hàng (Thường - Đồng - Bạc - Vàng - Kim cương))
+	(+ Cấp bậc khách hàng (Thường - Đồng - Bạc - Vàng - Kim cương))
 - Thông tin sách:
 	+ ID / ISBN sách
 	+ Title sách

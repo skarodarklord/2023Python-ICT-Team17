@@ -5,7 +5,7 @@
 
 #Can: Modify Staffs, modify store info, input staff, see staff info, see books & store info
 
-class admin:
+class Admin:
     def __init__(self, i, n, d, p):
         self.__id = i
         self.__name = n
