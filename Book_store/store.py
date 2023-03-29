@@ -1,9 +1,9 @@
 class Store:
-    def __init__(self, i, n, a, p):
-        self.__id = i
-        self.__name = n
-        self.__address = a
-        self.__phone = p
+    def __init__(self, id, name, address, phone):
+        self.__id = id
+        self.__name = name
+        self.__address = address
+        self.__phone = phone
         
     def get_id(self):
         return self.__id

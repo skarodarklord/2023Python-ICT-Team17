@@ -9,12 +9,13 @@
 #Can: Modify books info, input books, see books & store info, see & modify customers list
 
 class Staff:
-    def __init__(self, i, n, d, a, p):
-        self.__id = i
-        self.__name = n
-        self.__dob = d
-        self.__address = a
-        self.__phone = p
+    def __init__(self, id, name, dob, address, phone):
+        self.__id = id
+        self.__name = name
+        self.__dob = dob
+        self.__address = address
+        self.__phone = phone
+        self.__salary = None
     
     def get_id(self):
         return self.__id
@@ -32,8 +33,8 @@ class Staff:
         return self.__phone
     
     #For admins
-    def set_salary(self, s):
-        self.__salary = s
+    def set_salary(self, salary):
+        self.__salary = salary
         
     def get_salary(self):
         return self.__salary    

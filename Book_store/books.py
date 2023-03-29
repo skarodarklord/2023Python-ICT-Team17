@@ -9,12 +9,13 @@
 #Price
 
 class Book:
-    def __init__(self, i, t, g, a, y):
-        self.__id = i
-        self.__title = t
-        self.__genre = g
-        self.__author = a
-        self.__pub_year = y
+    def __init__(self, id, title, genre, author, year, quantity):
+        self.__id = id
+        self.__title = title
+        self.__genre = genre
+        self.__author = author
+        self.__pub_year = year
+        self.__quantity = quantity
         self.__target_audience = None
         self.__price = 0
         
@@ -32,6 +33,9 @@ class Book:
     
     def get_pub_year(self):
         return self.__pub_year
+    
+    def get_quantity(self):
+        return self.__quantity
     
     def set_target(self):
         print(f"Choose the target audience of this book:\n"
@@ -61,7 +65,7 @@ class Book:
         
     def get_price(self):
         return self.__price
-            
+    
         
     
     
