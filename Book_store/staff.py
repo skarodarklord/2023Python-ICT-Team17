@@ -17,17 +17,32 @@ class Staff:
         self.__phone = phone
         self.__salary = None
     
+    def set_id(self, id):
+        self.__id = id
+    
     def get_id(self):
         return self.__id
+    
+    def set_name(self, name):
+        self.__name = name
     
     def get_name(self):
         return self.__name
     
+    def set_dob(self, dob):
+        self.__dob = dob
+    
     def get_dob(self):
         return self.__dob
     
+    def set_addr(self, address):
+        self.__address = address
+    
     def get_addr(self):
         return self.__address
+    
+    def set_phone(self, phone_num):
+        self.__phone = phone_num
     
     def get_phone_num(self):
         return self.__phone
