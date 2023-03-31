@@ -4,7 +4,7 @@ from Book_store import books
 from Book_store import store
 from Book_store import customers
 
-def add_admin(ad_list):
+def add_admin(ad_list):        #OK
     print(f"Input admin info: \n")
     id = str(input(f"Admin ID: "))
     name = str(input(f"Admin name: "))
@@ -13,7 +13,7 @@ def add_admin(ad_list):
     ad_list += [admin.Admin(id, name, dob, phone)]
 
 #For admin:
-def input_store_info():
+def input_store_info():         #OK
     print(f"Input store infomation: \n")
     id = str(input(f"Store ID: "))
     name = str(input(f"Store name: "))
@@ -22,13 +22,13 @@ def input_store_info():
     new_store = store.Store(id, name, address, phone)
     return new_store
     
-def show_store_info(store):
+def show_store_info(store):             #OK
     print(f"Store ID: {store.get_id()} \n"
           f"Store name: {store.get_name()} \n"
           f"Address: {store.get_address()} \n"
           f"Phone number: {store.get_phone()} \n")
     
-def add_staff(staff_list):
+def add_staff(staff_list):              #OK
     n = int(input("Enter number of staffs you want to add: "))
     for i in range(n):
         print(f"\nEnter staff information: ")
@@ -39,12 +39,12 @@ def add_staff(staff_list):
         phone = str(input("Phone number: "))
         staff_list += [staff.Staff(id, name, dob, address, phone)]
         
-def set_staff_salary(staff_list):
+def set_staff_salary(staff_list):           #OK
     for i in range(len(staff_list)):
         salary = int(input(f"\nSalary for staff {staff_list[i].get_name()} (VND/month): "))
         staff_list[i].set_salary(salary)
         
-def show_staff(staff_list): #include salary
+def show_staff(staff_list): #include salary             #OK
     print(f"All staffs information: \n")
     for i in range(len(staff_list)):
         print(f"    Staff ID: {staff_list[i].get_id()} \n"
@@ -73,7 +73,7 @@ def find_books_index(book_list): #by name
         print("Book does not exist!")
         return None
 
-def find_staff_index(staff_list): #by name
+def find_staff_index(staff_list): #by name                  #OK
     nm = str(input(f"Enter staff name you want to find: "))
     for i in range(len(staff_list)):
         if staff_list[i].get_name() == nm:
@@ -82,10 +82,10 @@ def find_staff_index(staff_list): #by name
         print(f"Can't find staff!")
         return None
     
-def remove_staff(staff_list, i):
-    staff_list[i].remove()
+def remove_staff(staff_list, i):                        #OK
+    staff_list.remove(staff_list[i])
     
-def modify_staff_info(staff_list, i):
+def modify_staff_info(staff_list, i):                   #OK
     print(f"What do you want to update? \n"
           f"1. Staff ID \n"
           f"2. Staff name \n"
